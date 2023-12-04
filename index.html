@@ -4,45 +4,79 @@
 		<meta charset="utf-8">
 		<title>Employment History</title>
 	<style>
-    ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+      * {
+  box-sizing: border-box;
+}
+      .header {
+        padding: 80px; /* some padding */
+        text-align: center; /* center the text */
+        background: ##DDDBF1; /* green background */
+        color: white; /* white text color */
+      }
+      body {background-color: #B7C0EE;}
+      a {
+        color: #de6581;
+        text-decoration: none;
+        padding: 50px;
+        font-family: verdana;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+        color: white;
+
+      }
+
+      li {
+        float: left;
+        display: block;
+        padding: 6px;
+        border-right: 2px solid #bbb;
+        color: blue;
+
+      }
+
+      li a:hover {
+        background-color: #dddddd;
+      }
+      
+      /* Column container */
+.row { 
+  display: flex;
+  flex-wrap: wrap;
 }
 
-li {
-  float: left;
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-      .active {
-  background-color: #04AA6D;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
+/* Main column */
+.main { 
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
 }
     </style>
   </head>
-  <h1>
-    Employment History
-  </h1>
-  <ul>
-    <li> Home </li>
-    <li> All about me </li>
-    <li> Education </li>
-    <li> Extra Curriculars </li>
-    <li> Education </li>
-  </ul>
+<div class="header">
+  <h1>Cindy Chuong</h1>
+  <p>Careers</p>
+</div>
+  <body>
+    <ul>
+      <li> <a href=""> All About me </a> </li>
+      <li> <a href=""> Extracurriculars </a> </li>
+      <li> <a href=""> Employment History </a> </li>
+      <li> <a href=""> Education </a> </li>
+      <li> <a href=""> Quiz </a> </li>
+    </ul>
 	<body>
 		<h2>
       Tim Hortons
